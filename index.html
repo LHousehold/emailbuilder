@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Central Email Builder</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <script src="script.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+    <body>
+        <div class="container">
+            <div class="row title_row">
+                <h1 title="You're welcome">Central Email Builder</h1>
+                <div class="guide_link" onmouseup="window.open('guide.html');">?</div>
+            </div>
+            <div class="row textblock_row">
+                <div class="one column">
+                    <div class="checkbox_div">
+                        <input type="checkbox" class="checkbox" checked="true"/>
+                    </div>
+                </div>
+                <div class="eleven columns textblock_div">
+                    <textarea class="u-full-width textblock" placeholder="Text Block"></textarea>
+                </div>
+            </div>
+            <div class="row textblock_row">
+                <div class="one column">
+                    <div class="checkbox_div">
+                        <input type="checkbox" class="checkbox" checked="true"/>
+                    </div>
+                </div>
+                <div class="eleven columns textblock_div">
+                    <textarea class="u-full-width textblock" placeholder="Text Block"></textarea>
+                </div>
+            </div>
+            <div class="row textblock_row">
+                <div class="one column">
+                    <div class="checkbox_div">
+                        <input type="checkbox" class="checkbox" checked="true"/>
+                    </div>
+                </div>
+                <div class="eleven columns textblock_div">
+                    <textarea class="u-full-width textblock" placeholder="Text Block"></textarea>
+                </div>
+            </div>
+            <div id="new_textblock"></div>
+            <div class="row generate_button_row">
+                <input type="button" value="Generate Email" class="generate_email_button" onclick="generate_email()"/>
+                <input type="button" value="+" class="add_textblock_button" onclick="add_textblock()"/>
+            </div>
+            <div class="row email_row">
+                <hr/>
+                <div class="twelve columns">
+                    <input type="button" value="Copy Text" onclick="copy_email_content()" class="copy_button"/>
+                    <div class="email_content" id="email_content"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
