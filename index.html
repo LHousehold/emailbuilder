@@ -13,50 +13,50 @@
         <div class="container">
             <div class="row title_row">
                 <h1 title="You're welcome">Central Email Builder</h1>
-                <div class="guide_link" onclick="window.open('guide.html');">?</div>
+                <div class="guide_link" onclick="window.open('guide.html');" title="Guide to tags">?</div>
             </div>
             <div class="row textblock_row">
                 <div class="one column">
-                    <div class="checkbox_div">
+                    <div class="checkbox_div" title="Uncheck to not include in email">
                         <input type="checkbox" class="checkbox" checked="true"/>
                     </div>
                 </div>
                 <div class="eleven columns textblock_div">
-                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()"/>
+                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()" title="Remove paragraph"/>
                     <textarea class="u-full-width textblock" placeholder="Paragraph"></textarea>
                 </div>
             </div>
             <div class="row textblock_row">
                 <div class="one column">
-                    <div class="checkbox_div">
+                    <div class="checkbox_div" title="Uncheck to not include in email">
                         <input type="checkbox" class="checkbox" checked="true"/>
                     </div>
                 </div>
                 <div class="eleven columns textblock_div">
-                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()"/>
+                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()" title="Remove paragraph"/>
                     <textarea class="u-full-width textblock" placeholder="Paragraph"></textarea>
                 </div>
             </div>
             <div class="row textblock_row">
                 <div class="one column">
-                    <div class="checkbox_div">
+                    <div class="checkbox_div" title="Uncheck to not include in email">
                         <input type="checkbox" class="checkbox" checked="true"/>
                     </div>
                 </div>
                 <div class="eleven columns textblock_div">
-                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()"/>
+                    <input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()" title="Remove paragraph"/>
                     <textarea class="u-full-width textblock" placeholder="Paragraph"></textarea>
                 </div>
             </div>
             <div id="new_textblock"></div>
             <div class="row generate_button_row">
-                <input type="button" value="Generate Email" class="generate_email_button" onclick="generate_email()"/>
-                <input type="button" value="+" class="add_textblock_button" onclick="add_textblock()"/>
+                <input type="button" value="Generate Email" class="generate_email_button" onclick="generate_email()" title="Generate email"/>
+                <input type="button" value="+" class="add_textblock_button" onclick="add_textblock()" title="Add paragraph"/>
             </div>
             <div class="row email_row">
                 <hr/>
                 <div class="twelve columns">
-                    <input type="button" value="Copy Text" onclick="copy_email_content()" class="copy_button"/>
+                    <input type="button" value="Copy Text" onclick="copy_email_content()" class="copy_button" title="Copy email text to clipboard"/>
                     <div class="email_content" id="email_content"></div>
                 </div>
             </div>

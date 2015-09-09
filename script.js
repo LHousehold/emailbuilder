@@ -1,8 +1,8 @@
 function add_textblock() {
     var placeholder = document.getElementById("new_textblock");
     
-    new_textblock = '<div class="row textblock_row"><div class="one column"><div class="checkbox_div"><input type="checkbox" class="checkbox" checked="true"/>' +
-        '</div></div><div class="eleven columns textblock_div"><input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()"/>' +
+    new_textblock = '<div class="row textblock_row"><div class="one column"><div class="checkbox_div" title="Uncheck to not include in email"><input type="checkbox" class="checkbox" checked="true"/>' +
+        '</div></div><div class="eleven columns textblock_div"><input type="button" value="-" class="remove_textblock_button" onclick="remove_textblock()" title="Remove paragraph"/>' +
         '<textarea class="u-full-width textblock" placeholder="Paragraph"></textarea></div></div><div id="new_textblock"></div>';
     
     placeholder.outerHTML = new_textblock;
